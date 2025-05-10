@@ -1,14 +1,10 @@
-import Main from "./views/main"
-import Login from "./views/login"
-import Resgiter from "./views/resgiter"
+import Router from './router/route.tsx'
 
 
 function App() {
   return (
     <div>
-      <Main />
-      <Login />
-      <Resgiter />
+      <Router/> 
     </div>
   )
 }
