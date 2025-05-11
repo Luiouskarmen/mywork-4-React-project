@@ -1,0 +1,13 @@
+$primary-color: #0f2027;
+$secondary-color: #203a43;
+$accent-color: #ff6b6b;
+$text-light: #ffffff;
+$border-radius: 8px;
+//顶层的话可以文件内任意地方使用
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: $text-light;
+}
