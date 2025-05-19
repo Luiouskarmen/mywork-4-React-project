@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            color: red;
+            font-size: 100px;
+            background-color: blue;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+</head>
+<body>
+    <div>hhh</div>
+
+    <script>
+        
+        let i=1;
+        let v=document.createElement('div');
+        v.className='a';
+        function mouseMove(){
+            v.innerHTML=i++
+        }
+        v.addEventListener('mousemove',_.debounce(mouseMove,1000));
+        document.body.appendChild(v);
+
+
+    </script>
+</body>
+</html>

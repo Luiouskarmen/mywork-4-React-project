@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非常好</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="请输入内容">
+    <button onclick="handleClick()">点击我</button>
+    <button onclick="k()">保存</button>
+    <button onclick="alert('保存成功')">保存</button>
+    <button onclick="k">保1存</button>
+    <!-- 没有执行，缺少()，因为只是指向函数，没有执行函数
+     背后原理是：
+        1. 事件处理函数是一个函数引用
+        2. 事件处理函数会在事件发生时被调用
+        3. 如果没有括号，函数不会立即执行，而是将函数的引用传递给事件处理器
+        4. 当事件发生时，事件处理器会调用函数引用，并把事件对象作为参数传递给函数
+        5. 函数被调用时，会接收到事件对象，并使用它来获取事件相关的信息，比如输入框中的内容
+        6. 函数可以获取到事件相关的信息，并执行相关的操作，比如弹出提示框，或者修改页面内容等
+        7. 这样，就可以实现在点击按钮时，获取输入框中的内容，并弹出提示框，完成事件的处理。
+ -->
+    <script>
+        function handleClick() {
+            const input = document.getElementById('input').value;
+            alert('你输入的内容是：' + input);
+        }
+        const k=()=>alert("保存成功");
+    </script>
+</body>
+</html>
